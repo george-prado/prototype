@@ -1,0 +1,29 @@
+p {
+    color: #fff;
+}
+
+.border {
+    display: inline-block;
+    position: relative;
+    padding-top: 6px;
+}
+
+.border::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 35%;
+    height: 2px;
+    background-color: var(--atri-green);
+    transform: translateX(-50%);
+}
+
+.flex {
+    display: flex;
+}
+
+.m {
+    margin-top: 4rem;
+    margin-left: 8rem;
+}

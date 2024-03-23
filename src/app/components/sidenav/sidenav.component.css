@@ -1,0 +1,39 @@
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content {
+    padding: 1rem;
+}
+
+mat-sidenav {
+    background-color: var(--atri-bg);
+    color: var(--atri-green);
+    width: 6rem;
+}
+
+.toggle {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    writing-mode: vertical-rl; 
+    text-orientation: upright;
+    background-color: var(--atri-bg);
+    border: none;
+}
+
+.flex {
+    display: flex;
+    background-color: var(--atri-bg);
+}
+
+
+.btn {
+    color: var(--atri-green);
+    font-weight: bold;
+}
+
+mat-sidenav {
+    border-color: var(--atri-green);
+}

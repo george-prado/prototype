@@ -1,0 +1,6 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">Teste</mat-sidenav>
+    <mat-sidenav-content class="flex">
+        <button class="toggle btn" (click)="opened=!opened"> {{ opened ? 'Ocultar' : '...' }} </button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
