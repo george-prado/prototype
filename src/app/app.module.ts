@@ -7,14 +7,16 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatSidenavContainer, MatSidenavModule } from '@angular/material/sidenav';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ContentHeaderComponent } from './components/content-header/content-header.component';
-import { ContentComponent } from './components/content/content.component'
+import { ContentComponent } from './components/content/content.component';
+import { FooterComponent } from './components/footer/footer.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
     ContentHeaderComponent,
-    ContentComponent
+    ContentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
