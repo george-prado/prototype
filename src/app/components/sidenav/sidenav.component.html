@@ -1,6 +1,44 @@
 <mat-sidenav-container>
-    <mat-sidenav #sidenav mode="side" [(opened)]="opened">Teste</mat-sidenav>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+        <div class="side-menu">
+            <img class="logo" src="../../../assets/imgs/logo.png" alt="">
+            <div class="menu">
+                <div class="icon">
+                    <i class="material-icons glass">login</i>
+                    <label for="glass">Login</label>
+                </div>
+            
+                <div class="icon">
+                    <i class="material-icons glass">how_to_reg</i>
+                    <label for="glass">Register</label>
+                </div>
+            
+                <div class="icon">
+                    <i class="material-icons glass">search</i>
+                    <label for="glass">Search</label>
+                </div>
+            
+                <div class="icon">
+                    <i class="material-icons trending add">add_circle</i>
+                    <label for="glass">New Post</label>
+                </div>
+            
+                <div class="icon">
+                    <i class="material-icons trending add">info</i>
+                    <label for="glass">About Us</label>
+                </div>
+            
+                <div class="icon">
+                    <i class="material-icons trending add">mail</i>
+                    <label for="glass">Contact</label>
+                </div>
+            </div>
+        </div>
+
+    </mat-sidenav>
     <mat-sidenav-content class="flex">
-        <button class="toggle btn" (click)="opened=!opened"> {{ opened ? 'Ocultar' : '...' }} </button>
+        <button class="toggle" (click)="opened=!opened">
+            <i class="material-icons btn">{{ opened ? 'arrow_back_ios' : 'arrow_forward_ios' }}</i>
+          </button>
     </mat-sidenav-content>
 </mat-sidenav-container>

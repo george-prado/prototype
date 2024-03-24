@@ -9,18 +9,22 @@ mat-sidenav, mat-sidenav-content {
 mat-sidenav {
     background-color: var(--atri-bg);
     color: var(--atri-green);
-    width: 6rem;
+    width: 12rem;
 }
 
 .toggle {
+    position: fixed;
     display: flex;
-    flex-direction: column;
     align-self: center;
-    justify-self: center;
-    writing-mode: vertical-rl; 
-    text-orientation: upright;
+    justify-self: center; 
     background-color: var(--atri-bg);
     border: none;
+    color: var(--atri-green);
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 1rem;
 }
 
 .flex {
@@ -28,12 +32,43 @@ mat-sidenav {
     background-color: var(--atri-bg);
 }
 
-
-.btn {
+mat-sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 12rem;
+    background-color: var(--atri-bg);
     color: var(--atri-green);
-    font-weight: bold;
+    z-index: 1000;
+    padding: 0;
+  }
+
+.logo {
+    width: 8rem;
+    height: 8rem;
 }
 
-mat-sidenav {
-    border-color: var(--atri-green);
+.side-menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .1rem;
 }
