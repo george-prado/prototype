@@ -1,0 +1,31 @@
+.pagenav {
+    width: 87.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+
+.btn {
+    background-color: var(--atri-bg);
+    border: none;
+    color: var(--atri-green);
+}
+
+.navbtn, button {
+    padding: 0;
+}
+
+p {
+    color: var(--atri-green);
+}
+
+.material-icons {
+    font-size: 2.4rem;
+}
+
+.bold {
+    font-weight: 800;
+}

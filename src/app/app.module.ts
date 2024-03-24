@@ -8,7 +8,8 @@ import { MatSidenavContainer, MatSidenavModule } from '@angular/material/sidenav
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ContentHeaderComponent } from './components/content-header/content-header.component';
 import { ContentComponent } from './components/content/content.component';
-import { FooterComponent } from './components/footer/footer.component'
+import { FooterComponent } from './components/footer/footer.component';
+import { PagenavComponent } from './components/pagenav/pagenav.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './components/footer/footer.component'
     SidenavComponent,
     ContentHeaderComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    PagenavComponent
   ],
   imports: [
     BrowserModule,
