@@ -5,7 +5,7 @@
     --atri-bg: #0A0A0D;
 }
 
-html, body { height: 100vh; }
+html, body { min-height: 100%; }
 body { margin: 0; font-family: 'Inter', "Helvetica Neue", sans-serif; background-color: var(--atri-bg); }
 
 
