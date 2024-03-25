@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './pagenav.component.css'
 })
 export class PagenavComponent {
-  currentPage = 10
+  currentPage = 2
   totalPages = 10
 }

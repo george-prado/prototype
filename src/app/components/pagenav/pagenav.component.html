@@ -3,5 +3,5 @@
         <button class="btn" *ngIf="currentPage !== 1"> <i class="material-icons">navigate_before</i> </button>
         <button class="btn" *ngIf="currentPage !== totalPages"> <i class="material-icons">navigate_next</i> </button>
     </div>
-    <p><span class="bold">{{currentPage}}</span> de {{totalPages}}</p>
+    <p><span class="bold">{{currentPage}}</span> <span class="fog"> / {{totalPages}}</span></p>
 </div>
