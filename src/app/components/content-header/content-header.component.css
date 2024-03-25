@@ -11,12 +11,12 @@ p {
 .border::after {
     content: '';
     position: absolute;
-    left: 50%;
-    top: 0;
-    width: 35%;
-    height: 2px;
+    right: 100%;
+    bottom: 0%;
+    width: 4px;
+    height: 75%;
     background-color: var(--atri-green);
-    transform: translateX(-50%);
+    transform: translateX(-175%);
 }
 
 .flex {
@@ -24,7 +24,13 @@ p {
 }
 
 .m {
-    margin-top: 4rem;
-    margin-left: 4.8rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
     margin-bottom: 4rem;
+}
+
+.content-header {
+    display: flex;
+    justify-self: center;
+    align-content: center;
 }
