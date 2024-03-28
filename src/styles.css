@@ -3,12 +3,58 @@
     --atri-green-medium: #048C5A;
     --atri-green-dark: #05593A;
     --atri-bg: #0A0A0D;
+    --atri-article-date: #23232e;
+    --atri-article-text: #fafafa;
+    --atri-side-icon-sizes: 1.6rem;
+    --atri-sidebar-toggle-icon-size: 1rem;
+    --atri-article-title-font: 'Montserrat', sans-serif;
+    --atri-article-text-font: 'Roboto', sans-serif;
 }
 
-html, body { min-height: 100%; }
-body { margin: 0; font-family: 'Inter', "Helvetica Neue", sans-serif; background-color: var(--atri-bg); }
+html, body { 
+    min-height: 100%; 
+    margin: 0; 
+    font-family: var(--atri-article-text-font);
+    background-color: var(--atri-bg); 
+}
 
 
 h1, h2, h3, p {
     margin: 0;
+}
+
+/* Utility */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.mt {
+    margin-top: 1.2rem;
+}
+
+.mb {
+    margin-bottom: .8rem;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.b-0 {
+    border: none;
 }
