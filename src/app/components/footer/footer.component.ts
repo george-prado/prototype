@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-currentYear = new Date().getUTCFullYear()
+  footer = ['bold', 'center', 'dark-green', 'sm-text']
+
+  currentYear = new Date().getUTCFullYear()
 }

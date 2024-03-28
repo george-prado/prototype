@@ -1,8 +1,8 @@
 p {
-    position: relative;
-    bottom: 0;
-    font-size: .8rem;
-    color: var(--atri-green-dark);
     margin-bottom: .2rem;
     width: 87.5%;
+}
+
+p:hover {
+    color: var(--atri-green);
 }
