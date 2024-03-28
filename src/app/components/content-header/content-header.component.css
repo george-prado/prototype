@@ -1,5 +1,5 @@
 p {
-    color: #fff;
+    color: var(--atri-article-text);
 }
 
 .border {
@@ -19,18 +19,8 @@ p {
     transform: translateX(-175%);
 }
 
-.flex {
-    display: flex;
-}
-
 .m {
     margin-top: 2rem;
     margin-left: 4rem;
     margin-bottom: 4rem;
-}
-
-.content-header {
-    display: flex;
-    justify-self: center;
-    align-content: center;
 }
