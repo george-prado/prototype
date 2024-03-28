@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './pagenav.component.css'
 })
 export class PagenavComponent {
-  currentPage = 2
-  totalPages = 10
+  currentPage = 2;
+  totalPages = 10;
+
+  btn = ['p-0', 'b-0', 'bg', 'green'];
+  paginationText = ['green', 'sm-text'];
+  pagination = ['flex-col', 'pagenav-margins', 'center'];
 }

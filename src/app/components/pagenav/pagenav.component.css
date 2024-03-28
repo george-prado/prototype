@@ -1,23 +1,4 @@
-.pagenav {
+.pagenav-margins {
     width: 87.5%;
     margin-bottom: 4rem;
-}
-
-
-.btn {
-    background-color: var(--atri-bg);
-    color: var(--atri-green);
-}
-
-p {
-    color: var(--atri-green);
-    font-size: .8rem;
-}
-
-.material-icons {
-    font-size: var(--atri-side-icon-sizes);
-}
-
-.fog {
-    color: var(--atri-green-medium);
 }
