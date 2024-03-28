@@ -15,14 +15,11 @@ mat-sidenav {
 .toggle {
     position: fixed;
     top: 50%;
-    background-color: var(--atri-bg);
-    color: var(--atri-green);
 }
 
 mat-sidenav {
     position: fixed;
     width: 8rem;
-    color: var(--atri-green);
     z-index: 1000;
   }
 
@@ -41,10 +38,6 @@ mat-sidenav {
 
 .icon {
     gap: .1rem;
-}
-
-.material-icons {
-    font-size: var(--atri-side-icon-sizes);
 }
 
 .btn {

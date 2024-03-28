@@ -7,6 +7,11 @@ import { MatSidenav } from '@angular/material/sidenav';
   styleUrl: './sidenav.component.css'
 })
 export class SidenavComponent {
+  openSidenavButton = ['flex', 'toggle', 'center', 'b-0', 'bold', 'bg', 'green']
+  sidenavContent = ['flex-col', 'side-menu', 'center']
+  menuIcons = ['flex-col', 'menu']
+
+
   @ViewChild('sidenav') sidenav: MatSidenav | undefined;
   opened = false;
 
