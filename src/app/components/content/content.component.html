@@ -1,14 +1,14 @@
-<div class="article flex">
-    <div class="date flex-col">
+<div [ngClass]="post">
+    <div [ngClass]="date">
             <h2>27 <br>MAR</h2>
     </div>
-    <div class="content flex-col">
-        <h1 class="green title">Lorem ipsum titulo maneiro</h1>
-        <h3 class="mb subtitle title">Escrito por <span class="author">Mark Zuckerberg</span></h3>
-        <p class="mb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quibusdam! Eligendi, id perferendis laboriosam provident adipisci animi, minima, suscipit quia dicta quisquam blanditiis magni? Qui perferendis quos veritatis distinctio iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati vitae blanditiis corporis voluptatem fugit earum ipsum dolorum delectus <a class="green readmore" href="">...ler mais</a></p>
-        <div class="btn mb end">
-            <button class="author">#tag</button>
-            <button class="author">#tag</button>
+    <div [ngClass]="article">
+        <h1 [ngClass]="title">Lorem ipsum titulo maneiro</h1>
+        <h3 [ngClass]="author">Escrito por <span class="dark-green">Mark Zuckerberg</span></h3>
+        <p class="mb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quibusdam! Eligendi, id perferendis laboriosam provident adipisci animi, minima, suscipit quia dicta quisquam blanditiis magni? Qui perferendis quos veritatis distinctio iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati vitae blanditiis corporis voluptatem fugit earum ipsum dolorum delectus <a class="green light" href="">...ler mais</a></p>
+        <div [ngClass]="tagSection">
+            <button [ngClass]="tag">#tag</button>
+            <button [ngClass]="tag">#tag</button>
         </div>
     </div>
 </div>
