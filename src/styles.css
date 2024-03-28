@@ -19,8 +19,9 @@ html, body {
 }
 
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
     margin: 0;
+    text-decoration: none;
 }
 
 /* Utility */
@@ -39,10 +40,6 @@ h1, h2, h3, p {
     text-align: center;
 }
 
-.bold {
-    font-weight: 800;
-}
-
 .mt {
     margin-top: 1.2rem;
 }
@@ -57,4 +54,40 @@ h1, h2, h3, p {
 
 .b-0 {
     border: none;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.green {
+    color: var(--atri-green);
+}
+
+.green-secundary {
+    color: var(--atri-green-medium);
+}
+
+.dark-green {
+    color: var(--atri-green-dark);
+}
+
+.white {
+    color: var(--atri-article-text);
+}
+
+.bg {
+    background-color: var(--atri-bg);
+}
+
+.material-icons {
+    font-size: var(--atri-side-icon-sizes);
+}
+
+.sm-text {
+    font-size: .8rem;
 }
