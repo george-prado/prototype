@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './content-header.component.css'
 })
 export class ContentHeaderComponent {
-
+  contentHeader = ['flex', 'center']
+  contentHeaderText = ['border', 'white']
 }
