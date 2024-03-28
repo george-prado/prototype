@@ -1,44 +1,18 @@
-.green {
-    text-decoration: none;
-    color: var(--atri-green);
-}
-
-.author {
-    color: var(--atri-green-dark);
-}
-
-.mb {
-    margin-bottom: .8rem; 
-}
-
-.mt {
-    margin-top: 1.2rem;
-}
-
-.start {
-    margin-top: .8rem;
+.article {
+    margin-top: 1rem;
+    margin-left: 8rem;
 }
 
 .date {
     margin: 2rem 2.4rem 0 3.2rem;
-    display: flex;
-    color: #23232e;
+    color: var(--atri-article-date);
     text-align: end;
-    flex-direction: column;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    color: #fafafa;
+    color: var(--atri-article-text);
     width: 50%;
     text-align: justify;
-}
-
-.article {
-    display: flex;
-    margin-top: 1rem;
-    margin-left: 12rem;
 }
 
 .btn {
@@ -55,8 +29,18 @@
     color: var(--atri-green-medium)
 }
 
-.flex {
-    display: flex;
+.green {
+    text-decoration: none;
+    color: var(--atri-green);
+}
+
+.author {
+    color: var(--atri-green-dark);
+}
+
+.subtitle {
+    font-size: .8rem;
+    text-indent: 1px;
 }
 
 .readmore {
@@ -67,10 +51,3 @@
     margin-bottom: 4rem;
 }
 
-.indent {
-    text-indent: 1px;
-}
-
-.subtitle {
-    font-size: .8rem;
-}
