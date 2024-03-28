@@ -38,9 +38,14 @@
     color: var(--atri-green-dark);
 }
 
+.title {
+    font-family: var(--atri-article-title-font);
+}
+
 .subtitle {
     font-size: .8rem;
     text-indent: 1px;
+    letter-spacing: .2px;
 }
 
 .readmore {
