@@ -4,47 +4,27 @@ mat-sidenav-container {
 
 mat-sidenav, mat-sidenav-content {
     padding: 1rem;
+    background-color: var(--atri-bg);
 }
 
 mat-sidenav {
-    background-color: var(--atri-green);
     color: var(--atri-green);
     width: 12rem;
-}
-
-mat-drawer-content {
-    border: none;
 }
 
 .toggle {
     position: fixed;
     top: 50%;
-    display: flex;
-    justify-self: center; 
     background-color: var(--atri-bg);
-    border: none;
     color: var(--atri-green);
-    font-weight: bold;
-}
-
-.flex {
-    display: flex;
-    background-color: var(--atri-bg);
 }
 
 mat-sidenav {
     position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
     width: 8rem;
-    background-color: var(--atri-bg);
     color: var(--atri-green);
     z-index: 1000;
-    padding: 0;
   }
-
-
 
 .logo {
     transform: scale(.5);
@@ -53,33 +33,20 @@ mat-sidenav {
 
 .side-menu {
     width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
 .menu {
-    display: flex;
-    flex-direction: column;
     gap: 4rem;
 }
 
 .icon {
-    display: flex;
-    flex-direction: column;
     gap: .1rem;
 }
 
-.label {
-    font-size: .4rem;
-    text-align: center;
-}
-
 .material-icons {
-    font-size: 1.6rem;
+    font-size: var(--atri-side-icon-sizes);
 }
 
 .btn {
-    font-size: 1rem;
+    font-size: var(--atri-sidebar-toggle-icon-size);
 }

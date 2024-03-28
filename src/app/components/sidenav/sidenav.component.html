@@ -1,26 +1,26 @@
 <mat-sidenav-container>
-    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
-        <div class="side-menu">
+    <mat-sidenav class="p-0" #sidenav mode="side" [(opened)]="opened">
+        <div class="side-menu flex-col center">
             <img class="logo" src="../../../assets/imgs/logo.png" alt="">
             
-            <div class="menu">
-                <div class="icon">
+            <div class="menu flex-col">
+                <div class="icon flex-col">
                     <i class="material-icons glass">login</i>
                 </div>
             
-                <div class="icon">
+                <div class="icon flex-col">
                     <i class="material-icons trending add">add_circle</i>
                 </div>
                 
-                <div class="icon">
+                <div class="icon flex-col">
                     <i class="material-icons trending add">settings</i>
                 </div>
                 
-                <div class="icon">
+                <div class="icon flex-col">
                     <i class="material-icons trending add">help</i>
                 </div>
                
-                <div class="icon">
+                <div class="icon flex-col">
                     <i class="material-icons trending add">info</i>
                 </div>
             
@@ -29,7 +29,7 @@
 
     </mat-sidenav>
     <mat-sidenav-content class="flex">
-        <button class="toggle" (click)="opened=!opened">
+        <button class="toggle flex center b-0 bold" (click)="opened=!opened">
             <i class="material-icons btn">{{ opened ? 'arrow_back_ios' : 'arrow_forward_ios' }}</i>
           </button>
     </mat-sidenav-content>
