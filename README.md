@@ -1,6 +1,24 @@
-# Blog
+# ATRI Institute Blog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+
+## How to contribute
+
+Take a careful look at style variables and global utility classes in styles.css. Our goal is to build a good application while keeping our code clear, so:
+
+#### • Never repeat yourself
+
+If you have to, make a new utility class for team reusability. Feel free to refactor anything as long as you're making the code more legible.
+
+#### • Keep to the Pattern
+
+A good front-end application might look as if it were built by one single person. That means everyone keeps the same pattern while developing components.
+
+#### • Try to Avoid Magic Numbers
+Sometimes it can't be helped, but for most cases, it's totally reasonable. To maintain standardization while setting CSS sizes, give preference to the use of multiple values or divisors of 4 (0.1, 0.2, 0.4, 0.8,..., 4, 8, 12,...).
+
+#### • Focus on Functionality
+Design is definitely a concern, but not as high and costly as functionality. We must focus on delivering functional components, adjusting the visual part of the application is a quicker and easier job. Make sure it's simple.
 
 ## Development server
 
@@ -8,7 +26,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component components\component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
