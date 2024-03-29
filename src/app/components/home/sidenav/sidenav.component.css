@@ -9,7 +9,7 @@ mat-sidenav, mat-sidenav-content {
 
 mat-sidenav {
     color: var(--atri-green);
-    width: 12rem;
+    width: 16rem;
 }
 
 .toggle {
