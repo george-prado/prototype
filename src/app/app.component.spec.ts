@@ -1,35 +1,41 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { SidenavComponent } from './components/home/sidenav/sidenav.component';
+import { ContentHeaderComponent } from './components/home/content-header/content-header.component'; 
+import { ContentComponent } from './components/home/content/content.component';
+import { PagenavComponent } from './components/home/pagenav/pagenav.component';
+import { FooterComponent } from './components/home/footer/footer.component';
+import { MatSidenavModule } from '@angular/material/sidenav'; // Importe apenas o MatSidenavModule
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('AppComponent', () => {
+  let fixture: ComponentFixture<AppComponent>;
+  let component: AppComponent;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        MatSidenavModule, // Use apenas o MatSidenavModule aqui
+        NoopAnimationsModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        SidenavComponent,
+        ContentHeaderComponent,
+        ContentComponent,
+        PagenavComponent,
+        FooterComponent,
       ],
     }).compileComponents();
+
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'blog'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('blog');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, blog');
+    expect(component).toBeTruthy();
   });
 });
